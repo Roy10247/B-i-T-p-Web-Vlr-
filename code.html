@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#690005", "outline": "#ab8887", "primary": "#ffb3b2", "primary-fixed": "#ffdad9", "on-tertiary-container": "#232c26", "secondary-fixed-dim": "#00dbe9", "on-surface": "#d9e3f2", "on-secondary-fixed-variant": "#004f54", "error": "#ffb4ab", "tertiary-fixed-dim": "#bfc9c1", "primary-fixed-dim": "#ffb3b2", "on-tertiary": "#29322d", "surface-tint": "#ffb3b2", "secondary-fixed": "#7df4ff", "surface-variant": "#2c3641", "on-tertiary-fixed-variant": "#3f4943", "inverse-on-surface": "#27313c", "surface": "#0a141e", "surface-container": "#17202b", "surface-container-lowest": "#050f19", "on-secondary": "#00363a", "on-tertiary-fixed": "#151e19", "surface-dim": "#0a141e", "inverse-primary": "#bd0c2d", "inverse-surface": "#d9e3f2", "secondary": "#d3fbff", "on-background": "#d9e3f2", "on-primary-fixed-variant": "#92001f", "outline-variant": "#5b403f", "tertiary-container": "#89938c", "tertiary-fixed": "#dbe5dd", "on-primary-fixed": "#410008", "surface-bright": "#303a45", "on-secondary-fixed": "#002022", "on-secondary-container": "#00686f", "surface-container-highest": "#2c3641", "on-primary-container": "#5b000f", "secondary-container": "#00eefc", "on-surface-variant": "#e4bdbc", "surface-container-low": "#121c27", "primary-container": "#ff525d", "error-container": "#93000a", "surface-container-high": "#212b35", "tertiary": "#bfc9c1", "background": "#0a141e", "on-error-container": "#ffdad6", "on-primary": "#680013" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "3rem", "gutter": "1.5rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "display-hero": [ "Oswald" ], "headline-lg-mobile": [ "Oswald" ], "label-tactical": [ "Space Mono" ], "headline-xl": [ "Oswald" ], "display-hero-mobile": [ "Oswald" ], "body-md": [ "Space Grotesk" ], "body-lg": [ "Space Grotesk" ], "body-sm": [ "Space Grotesk" ], "headline-xl-mobile": [ "Oswald" ], "headline-md": [ "Oswald" ], "telemetry-micro": [ "Space Mono" ], "headline-sm": [ "Oswald" ], "headline-lg": [ "Oswald" ] }, "fontSize": { "display-hero": [ "84px", { "lineHeight": "84px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "32px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "label-tactical": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" } ], "headline-xl": [ "56px", { "lineHeight": "60px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "display-hero-mobile": [ "44px", { "lineHeight": "48px", "letterSpacing": "0.03em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0.0em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-xl-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "0.03em", "fontWeight": "700" } ], "headline-md": [ "28px", { "lineHeight": "32px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "telemetry-micro": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.18em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-lg": [ "40px", { "lineHeight": "44px", "letterSpacing": "0.03em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.6)]"><div class="w-full px-margin-mobile lg:px-margin h-20 flex items-center justify-between"><div class="flex items-center space-x-gutter-mobile lg:space-x-gutter"><div class="flex items-center gap-space-sm"><img alt="VALORANT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X1niwmZtMbeiVExmG1ZFe26HnGRDKdgnmuCdO_GUvdkRtgA0ivlzehl1m2leVvzjJX7dEC7FsEI2qzQ_wVJVAknSy1agI7zb16ME5nY3b0Sp5mw9CGhCFSYS6JZlZ21xacnpSjVoSu3UKxSCxPF8_HipOWxmLxxnji2b8jb3smPtODzRz_AjFfpebgiOw8koEDwbLA4eqS4VCvoHc9N1sDOMrVso17SjUeZu_yybdXWNK98fOgwC_I3cY"/><div class="hidden sm:flex flex-col"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider leading-none">VALORANT</span><span class="font-telemetry-micro text-telemetry-micro text-secondary-container tracking-widest uppercase">// PROTOCOL.SYS</span></div></div><div class="hidden xl:flex items-center pl-space-md text-outline font-label-tactical text-label-tactical select-none"><span class="text-primary-container mr-space-xs">+</span><span>[SEC-08 // LAT 35.6895° N]</span></div></div><nav class="hidden lg:flex items-center space-x-space-xs xl:space-x-space-sm h-full" data-active-classes="bg-surface-container-highest text-on-surface border-b-2 border-primary-container"><a aria-current="page" class="px-space-sm py-space-xs font-label-tactical uppercase tracking-widest transition-colors bg-surface-container-highest text-on-surface border-b-2 border-primary-container" data-path="game-info" href="#">GAME INFO</a><a class="px-space-sm py-space-xs font-label-tactical text-label-tactical uppercase tracking-widest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="agents" href="#">AGENTS</a><a class="px-space-sm py-space-xs font-label-tactical text-label-tactical uppercase tracking-widest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="maps-and-arsenal" href="#">MAPS &amp; ARSENAL</a><a class="px-space-sm py-space-xs font-label-tactical text-label-tactical uppercase tracking-widest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="specs" href="#">SPECS</a><a class="px-space-sm py-space-xs font-label-tactical text-label-tactical uppercase tracking-widest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="news" href="#">NEWS</a><a class="px-space-sm py-space-xs font-label-tactical text-label-tactical uppercase tracking-widest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="esports" href="#">ESPORTS</a></nav><div class="flex items-center space-x-space-sm md:space-x-space-md"><div class="flex items-center space-x-space-xs"><button aria-label="Search telemetry" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Toggle sound system" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button></div><a class="hidden sm:inline-flex items-center justify-center bg-primary-container hover:bg-inverse-surface text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider px-space-lg py-space-xs transition-colors" data-path="play-free" href="#"><span class="font-label-tactical text-label-tactical mr-space-xs text-on-primary-container">//</span>PLAY FREE</a><div class="relative flex items-center justify-center pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary-container rounded-full ring-2 ring-surface-container-lowest"></span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full text-on-surface select-none relative overflow-x-hidden">
+<!-- Scanline Screen Overlay (Atmospheric Texture) -->
+<div class="pointer-events-none fixed inset-0 z-40 bg-[linear-gradient(rgba(18,28,39,0)_50%,rgba(0,0,0,0.25)_50%)] bg-[length:100%_4px] opacity-40 mix-blend-overlay"></div>
+<!-- Tactical Reticle HUD Cursor Tracer -->
+<div class="pointer-events-none fixed z-50 -translate-x-1/2 -translate-y-1/2 hidden md:block transition-transform duration-75 ease-out" id="tactical-crosshair">
+<div class="relative w-8 h-8 flex items-center justify-center">
+<div class="absolute w-2 h-[1px] bg-primary-container -left-2"></div>
+<div class="absolute w-2 h-[1px] bg-primary-container -right-2"></div>
+<div class="absolute h-2 w-[1px] bg-primary-container -top-2"></div>
+<div class="absolute h-2 w-[1px] bg-primary-container -bottom-2"></div>
+<div class="w-1 h-1 bg-secondary-container"></div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- 1. HERO SECTION                            -->
+<!-- ========================================== -->
+<section class="relative w-full min-h-[92vh] flex flex-col justify-between px-margin-mobile lg:px-margin pt-8 pb-12 bg-gradient-to-b from-surface-container-lowest via-surface to-surface-container-low overflow-hidden">
+<!-- Ambient Sci-Fi Glows & Grid Background -->
+<div class="absolute inset-0 bg-[radial-gradient(#2c3641_1px,transparent_1px)] [background-size:28px_28px] opacity-20 pointer-events-none"></div>
+<div class="absolute top-1/4 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-10 left-10 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Background Cinematic Tactical Backdrop Image -->
+<div class="absolute inset-0 z-0 opacity-25 mix-blend-luminosity bg-cover bg-center pointer-events-none" data-alt="Dark cinematic tactical combat arena with volumetric neon cyan and crimson lighting, sharp geometric brutalist architecture, floating digital particles and high tech holographic HUD wireframes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqfWie7uP8CBGuS1A0qjeWVEmYv5vziWIYqSAYd0jNpHkOLooNyROWaPfyauySrpDkudecSOR4D6rtvcgDqLMV48vqcPCM3ohaIdFZztHIevxp62kH9GKF8dB78XBzpRyqM53h8aRfnsCf8i4SH-vWUBrcWrCS7tX11iQHN1C49VZb4nmWVPRO-6aGShzjxH4fdMb8MnWUmqhFMr2YRaGuyPAaAZz_7K4IH1Y9Dsl7Js1-lRJIhuiLoA')"></div>
+<!-- Top Telemetry & Coordinate Bar -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-4 pt-2">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 bg-primary-container animate-ping"></span>
+<span class="font-label-tactical text-label-tactical tracking-widest text-primary uppercase">[PROTOCOL // 05.12 ACTIVE]</span>
+<span class="hidden sm:inline font-telemetry-micro text-telemetry-micro text-tertiary">| SEC-08 READY</span>
+</div>
+<div class="font-label-tactical text-label-tactical text-outline flex items-center gap-2">
+<span class="text-secondary-container font-bold">+</span>
+<span>LAT 35.6895° N, LONG 139.6917° E // TOKYO SECTOR</span>
+</div>
+</div>
+<!-- Center Hero Typography & Call-To-Action -->
+<div class="relative z-10 my-auto py-12 max-w-5xl">
+<div class="flex items-center gap-3 mb-4">
+<div class="px-2 py-0.5 bg-primary-container/20 text-primary-container font-label-tactical text-label-tactical uppercase tracking-widest">A 5V5 CHARACTER-BASED TACTICAL SHOOTER</div>
+<div class="h-[1px] w-24 bg-surface-variant"></div>
+</div>
+<!-- Glitch Title -->
+<h1 class="group relative font-display-hero text-display-hero uppercase tracking-tight text-on-surface leading-none mb-6 cursor-default">
+<span class="relative inline-block transition-transform duration-200 group-hover:translate-x-0.5">DEFY THE</span>
+<span class="relative inline-block text-primary-container transition-transform duration-200 group-hover:-translate-x-0.5 ml-2">LIMITS</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+        Where razor-sharp precision gunplay meets fluid, adaptive agent abilities. Outwit, outplay, and outshine the opposition in the ultimate high-stakes tactical protocol.
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-6">
+<a class="relative group inline-flex items-center gap-3 px-8 py-4 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider shadow-lg shadow-primary-container/25 transition-all duration-200 hover:bg-on-surface hover:text-surface-container-lowest hover:shadow-primary-container/50 [clip-path:polygon(12px_0,100%_0,calc(100%-12px)_100%,0_100%)]" href="#download-sector">
+<span class="font-label-tactical text-label-tactical text-on-primary-container group-hover:text-primary-container transition-colors">//</span>
+<span>PLAY FREE NOW</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<button class="relative inline-flex items-center gap-3 px-6 py-4 bg-surface-container-high/80 text-secondary-container hover:bg-surface-bright hover:text-on-surface font-headline-sm text-headline-sm uppercase tracking-wider transition-all duration-150 [clip-path:polygon(0_0,calc(100%-10px)_0,100%_10px,100%_100%,10px_100%,0_calc(100%-10px))]" id="trigger-trailer-modal" type="button">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">play_circle</span>
+<span>WATCH GAMEPLAY</span>
+</button>
+<div class="hidden xl:flex flex-col ml-4 pl-4 border-l-0">
+<span class="font-telemetry-micro text-telemetry-micro text-tertiary tracking-widest uppercase">ENGINE RUNTIME</span>
+<span class="font-label-tactical text-label-tactical text-secondary-container">128-TICK SERVER PROTOCOL</span>
+</div>
+</div>
+</div>
+<!-- Hero Bottom Quick-Jump Telemetry Strip -->
+<div class="relative z-10 w-full pt-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+<a class="group flex items-center justify-between p-3 bg-surface-container/70 hover:bg-surface-container-highest transition-colors" href="#agents-roster">
+<span class="font-label-tactical text-label-tactical text-on-surface-variant group-hover:text-primary transition-colors">01 // AGENTS ROSTER</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">north_east</span>
+</a>
+<a class="group flex items-center justify-between p-3 bg-surface-container/70 hover:bg-surface-container-highest transition-colors" href="#arsenal-sector">
+<span class="font-label-tactical text-label-tactical text-on-surface-variant group-hover:text-secondary-container transition-colors">02 // MAPS &amp; ARSENAL</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-secondary-container group-hover:translate-x-1 transition-all">north_east</span>
+</a>
+<a class="group flex items-center justify-between p-3 bg-surface-container/70 hover:bg-surface-container-highest transition-colors" href="#system-specs">
+<span class="font-label-tactical text-label-tactical text-on-surface-variant group-hover:text-primary transition-colors">03 // SYSTEM SPECS</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">north_east</span>
+</a>
+<a class="group flex items-center justify-between p-3 bg-surface-container/70 hover:bg-surface-container-highest transition-colors" href="#intel-feed">
+<span class="font-label-tactical text-label-tactical text-on-surface-variant group-hover:text-secondary-container transition-colors">04 // LATEST INTEL</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-secondary-container group-hover:translate-x-1 transition-all">north_east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. AGENTS SHOWCASE (Interactive Dossier)  -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile lg:px-margin py-20 bg-surface-container-lowest relative" id="agents-roster">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<div class="flex items-center gap-2 mb-2 font-label-tactical text-label-tactical text-primary-container">
+<span>// ROSTER DOSSIER</span>
+<span class="h-2 w-2 bg-primary-container"></span>
+<span class="text-tertiary">CLASSIFIED SECTOR 08</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl uppercase text-on-surface tracking-wider leading-none">MEET THE AGENTS</h2>
+</div>
+<!-- Role Filter Pills -->
+<div class="flex flex-wrap gap-2" id="role-filters">
+<button class="role-filter-btn px-4 py-2 font-label-tactical text-label-tactical tracking-widest uppercase bg-primary-container text-on-primary font-bold shadow-md transition-colors" data-role="ALL" type="button">ALL</button>
+<button class="role-filter-btn px-4 py-2 font-label-tactical text-label-tactical tracking-widest uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-role="DUELIST" type="button">DUELIST</button>
+<button class="role-filter-btn px-4 py-2 font-label-tactical text-label-tactical tracking-widest uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-role="INITIATOR" type="button">INITIATOR</button>
+<button class="role-filter-btn px-4 py-2 font-label-tactical text-label-tactical tracking-widest uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-role="CONTROLLER" type="button">CONTROLLER</button>
+<button class="role-filter-btn px-4 py-2 font-label-tactical text-label-tactical tracking-widest uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-role="SENTINEL" type="button">SENTINEL</button>
+</div>
+</div>
+<!-- Agent Spotlight & Roster Grid Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Spotlight Dossier Panel (7 Columns) -->
+<div class="lg:col-span-7 bg-surface-container p-6 lg:p-8 relative overflow-hidden [clip-path:polygon(0_0,calc(100%-24px)_0,100%_24px,100%_100%,0_100%)] shadow-2xl" id="agent-spotlight">
+<div class="flex items-center justify-between pb-4 mb-6">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 bg-secondary-container/20 text-secondary-container font-label-tactical text-label-tactical uppercase tracking-widest font-bold" id="spotlight-role-badge">DUELIST</span>
+<span class="font-label-tactical text-label-tactical text-tertiary" id="spotlight-origin">SOUTH KOREA</span>
+</div>
+<span class="font-telemetry-micro text-telemetry-micro text-outline tracking-widest">[DOSSIER_REF // 08-AG]</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
+<div>
+<span class="font-display-hero text-headline-xl text-surface-bright leading-none block select-none" id="spotlight-number">#01</span>
+<h3 class="font-headline-xl text-headline-xl uppercase tracking-wider text-on-surface leading-tight mb-3" id="spotlight-name">JETT</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6" id="spotlight-bio">
+              Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.
+            </p>
+<div class="flex items-center gap-4">
+<div class="p-3 bg-surface-container-lowest text-center min-w-[80px]">
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">PLAYSTYLE</div>
+<div class="font-label-tactical text-label-tactical text-primary-container font-bold" id="spotlight-stat-style">AGGRESSIVE</div>
+</div>
+<div class="p-3 bg-surface-container-lowest text-center min-w-[80px]">
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">DIFFICULTY</div>
+<div class="font-label-tactical text-label-tactical text-secondary-container font-bold" id="spotlight-stat-diff">HIGH</div>
+</div>
+</div>
+</div>
+<!-- Stylized Avatar Frame with Corner Accents -->
+<div class="relative w-full aspect-square bg-surface-container-lowest overflow-hidden flex items-center justify-center p-2">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent z-10"></div>
+<!-- Target Crosshair Accent -->
+<div class="absolute top-3 left-3 z-20 text-outline text-label-tactical font-label-tactical">+</div>
+<div class="absolute bottom-3 right-3 z-20 text-outline text-label-tactical font-label-tactical">+</div>
+<img alt="Agent Profile Visual" class="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-105" data-alt="High contrast stylized character portrait of tactical agent Jett with white tied-up wind-swept hair, glowing wind daggers, futuristic cyan ninja tactical suit against dark volumetric shadows" id="spotlight-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk8l009rA1jXslStISYYZ-uWSaQZMvJWVQA7DQx04lFo9a-TFgsA7-crF0xoFgxoRe7m23i5g3XAsJKPea7l0tDQAe_g7bZgIe5WZzpkLIbOvSvySTUI1FHWCH74ae9vnEml6-Dqk1u9sQjn_nPgipikBlvOvsooSOWfDyHgw8UWPJyZhpNB79bYjXwFy6Jkk1AXm4zt7xd2PlKXO76npNfM60yrhysvb0zfsMJnbXD7FcXemchq9eag"/>
+</div>
+</div>
+<!-- 4 Tactical Abilities Strip -->
+<div>
+<div class="font-label-tactical text-label-tactical text-on-surface uppercase tracking-widest mb-3 flex items-center justify-between">
+<span>TACTICAL ABILITIES</span>
+<span class="text-tertiary-container text-telemetry-micro font-telemetry-micro">HOVER FOR COMBAT TELEMETRY</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="spotlight-abilities">
+<!-- Ability C -->
+<div class="ability-card group relative p-3 bg-surface-container-lowest hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-tactical text-label-tactical px-1.5 py-0.5 bg-surface-variant text-on-surface">C</span>
+<span class="material-symbols-outlined text-[18px] text-secondary-container">filter_drama</span>
+</div>
+<div class="font-label-tactical text-label-tactical font-bold text-on-surface">CLOUDBURST</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">VISION BLOCK</div>
+<!-- Tooltip Popup -->
+<div class="absolute bottom-full left-0 mb-2 w-48 p-3 bg-surface-container-highest text-on-surface text-body-sm font-body-sm shadow-xl hidden group-hover:block z-30 pointer-events-none">
+                Instantly throw a projectile that expands into a brief vision-blocking cloud on impact with a surface.
+              </div>
+</div>
+<!-- Ability Q -->
+<div class="ability-card group relative p-3 bg-surface-container-lowest hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-tactical text-label-tactical px-1.5 py-0.5 bg-surface-variant text-on-surface">Q</span>
+<span class="material-symbols-outlined text-[18px] text-secondary-container">expand_less</span>
+</div>
+<div class="font-label-tactical text-label-tactical font-bold text-on-surface">UPDRAFT</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">MOBILITY</div>
+<div class="absolute bottom-full left-0 mb-2 w-48 p-3 bg-surface-container-highest text-on-surface text-body-sm font-body-sm shadow-xl hidden group-hover:block z-30 pointer-events-none">
+                Instantly propel Jett high into the air to secure vertical vantage lines or surprise defenders.
+              </div>
+</div>
+<!-- Ability E -->
+<div class="ability-card group relative p-3 bg-surface-container-lowest hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-tactical text-label-tactical px-1.5 py-0.5 bg-primary-container text-on-primary">E</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">bolt</span>
+</div>
+<div class="font-label-tactical text-label-tactical font-bold text-on-surface">TAILWIND</div>
+<div class="font-telemetry-micro text-telemetry-micro text-primary">SIGNATURE</div>
+<div class="absolute bottom-full left-0 mb-2 w-48 p-3 bg-surface-container-highest text-on-surface text-body-sm font-body-sm shadow-xl hidden group-hover:block z-30 pointer-events-none">
+                Activate to prepare a gust of wind. Re-use to instantly propel Jett in the direction she moves.
+              </div>
+</div>
+<!-- Ability X (Ultimate) -->
+<div class="ability-card group relative p-3 bg-surface-container-lowest hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-tactical text-label-tactical px-1.5 py-0.5 bg-primary text-on-primary-fixed">X</span>
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">swords</span>
+</div>
+<div class="font-label-tactical text-label-tactical font-bold text-on-surface">BLADE STORM</div>
+<div class="font-telemetry-micro text-telemetry-micro text-primary-fixed-dim">ULTIMATE</div>
+<div class="absolute bottom-full right-0 mb-2 w-48 p-3 bg-surface-container-highest text-on-surface text-body-sm font-body-sm shadow-xl hidden group-hover:block z-30 pointer-events-none">
+                Equip a set of highly accurate throwing knives that recharge upon killing an opponent. Right click to throw all.
+              </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Agent Selection Grid (5 Columns) -->
+<div class="lg:col-span-5 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3" id="agent-card-grid">
+<!-- Agent Item: Jett -->
+<button class="agent-select-card active p-3 bg-surface-container hover:bg-surface-container-high text-left flex items-center gap-3 transition-all relative overflow-hidden group" data-agent-id="jett" data-role="DUELIST" type="button">
+<div class="w-12 h-12 bg-surface-container-lowest shrink-0 overflow-hidden">
+<img alt="Jett" class="w-full h-full object-cover" data-alt="Jett avatar tactical face close-up, Korean female operative with silver tied hair and intense gaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0uyF-XhCewLTvAMqWsLT4DxyNmFdDssnYdwG2PapHMa3lgDm8RRvw13OMobIh5TDEHKd-yqWg14y3Emo63CTvDQy__sUKxl_RKALEo3NhvhnAw7KDwx66RyWTeIZUTrycwZbNM5VhqLwC4hqdeIqcG_Vt9r9MIHB1SbbITvQ2JVFUepLAbBr5TMVa0btEL2jKyVSkFMToshyUPO7wKFT0APvCPwBoRLWKBia4mvzMBqOtXt0OhYxjMA"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface truncate group-hover:text-primary transition-colors">JETT</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase">DUELIST // KOR</div>
+</div>
+<span class="active-indicator absolute right-0 top-0 bottom-0 w-1 bg-primary-container"></span>
+</button>
+<!-- Agent Item: Phoenix -->
+<button class="agent-select-card p-3 bg-surface-container hover:bg-surface-container-high text-left flex items-center gap-3 transition-all relative overflow-hidden group" data-agent-id="phoenix" data-role="DUELIST" type="button">
+<div class="w-12 h-12 bg-surface-container-lowest shrink-0 overflow-hidden">
+<img alt="Phoenix" class="w-full h-full object-cover" data-alt="Phoenix avatar tactical face portrait, British male operative with bright solar fire energy jacket and grin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARx1nk3lQTayglVM1We2qFw9mCZoLTzxbXO5FsXusli0svbbRRBR5AhO97M15k6T6Ug-7CHfxxOEYQumK6SBkXRhV9Meql0vkp2Ca8-HtHqQrwLvvPV4DeMNbawhk9pnmDpTIRBSVS9hbjukxjSVjq_-s_TRXsil1Re7iKTfrsv74pb4nEGZAxRz2SA1sMAgfX5DIymeud2RZWdZnzS6vK3Y3dvublPsGnpM8qBeXZ6DRhyUz94GA_0g"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface truncate group-hover:text-primary transition-colors">PHOENIX</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase">DUELIST // GBR</div>
+</div>
+<span class="active-indicator hidden absolute right-0 top-0 bottom-0 w-1 bg-primary-container"></span>
+</button>
+<!-- Agent Item: Viper -->
+<button class="agent-select-card p-3 bg-surface-container hover:bg-surface-container-high text-left flex items-center gap-3 transition-all relative overflow-hidden group" data-agent-id="viper" data-role="CONTROLLER" type="button">
+<div class="w-12 h-12 bg-surface-container-lowest shrink-0 overflow-hidden">
+<img alt="Viper" class="w-full h-full object-cover" data-alt="Viper avatar face portrait, American chemist female operative wearing dark tactical gas mask with luminescent emerald poison gas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNEJCuD9c1q5l6vplJxBIXyPqGReMTrPZts6kMDJNWs8i5Q7sN1RS8NxqsbVxPxipuKze9h_XzUmnpYAOnZlIi8SJn11lGDqEu7lvBxnmm2Qt-1nP1qkvHnG3Y7oEX0i-PrHsa_x1YTj5ZVkSIpd7VX5a-nJ2Ii6rrYTYAN0ox9Wc2Mj_IFXNmtmJXnDeHf8gDZ7kEYHvWKBlGu2W5oXmDgmDYEC0fiX1znAScZEtd5O2bBqsbYaKmYg"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface truncate group-hover:text-secondary-container transition-colors">VIPER</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase">CONTROLLER // USA</div>
+</div>
+<span class="active-indicator hidden absolute right-0 top-0 bottom-0 w-1 bg-secondary-container"></span>
+</button>
+<!-- Agent Item: Omen -->
+<button class="agent-select-card p-3 bg-surface-container hover:bg-surface-container-high text-left flex items-center gap-3 transition-all relative overflow-hidden group" data-agent-id="omen" data-role="CONTROLLER" type="button">
+<div class="w-12 h-12 bg-surface-container-lowest shrink-0 overflow-hidden">
+<img alt="Omen" class="w-full h-full object-cover" data-alt="Omen tactical hooded phantom portrait, shadow operative with three glowing blue vertical slit eyes in dark ethereal shroud" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqqYMbJ_6uo4o_c17JNEhoNWnfDh4Zs1aSf83HTuXeRFXvQSauamcHa2qpfhzZyAmW7ET01Ljycq0MuG7VimNVowgZtqDMNkQ459n7-o_sukL2v7Fn0rArqCHJ8_QA82ZKgFMFbz-OFHG6tistwcC7mHAYhEh7iW40nMWt1SNnfQUOB3qtNAA6dUdtQSDVRUcpkZWo2eHCYYu4D0y0BZbr5BITkgDpMDk9WRY1FyX9GfsgdHD1p594hw"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface truncate group-hover:text-secondary-container transition-colors">OMEN</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase">CONTROLLER // UNKNOWN</div>
+</div>
+<span class="active-indicator hidden absolute right-0 top-0 bottom-0 w-1 bg-secondary-container"></span>
+</button>
+<!-- Agent Item: Reyna -->
+<button class="agent-select-card p-3 bg-surface-container hover:bg-surface-container-high text-left flex items-center gap-3 transition-all relative overflow-hidden group" data-agent-id="reyna" data-role="DUELIST" type="button">
+<div class="w-12 h-12 bg-surface-container-lowest shrink-0 overflow-hidden">
+<img alt="Reyna" class="w-full h-full object-cover" data-alt="Reyna tactical headshot portrait, Mexican female agent with purple soul orbs and fierce predatory expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ3SanUzd5rQ6gaa5ed-CFFvUmoregWEsRAL1s8l0ccU8HqSWZvHRg6u1NWi97s8pVv2xj_HwgRQZiuyugIYvD8Rr7cv8HzWMHGLOY_2BlGYGU9qRIzUH2yh_op6cBJj7Sn9kWLM0sNMeS1g1DhaLkT6f1dMr17BhWiko5pCjIpJZxMp0OrOQKYHbe5J9lglpIbP7OGCKB3dXo_bcvzhbuFh_T0ej4UpjSSFvdpDOwdfa5by5Rm54IbA"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface truncate group-hover:text-primary transition-colors">REYNA</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase">DUELIST // MEX</div>
+</div>
+<span class="active-indicator hidden absolute right-0 top-0 bottom-0 w-1 bg-primary-container"></span>
+</button>
+<!-- Agent Item: Sova -->
+<button class="agent-select-card p-3 bg-surface-container hover:bg-surface-container-high text-left flex items-center gap-3 transition-all relative overflow-hidden group" data-agent-id="sova" data-role="INITIATOR" type="button">
+<div class="w-12 h-12 bg-surface-container-lowest shrink-0 overflow-hidden">
+<img alt="Sova" class="w-full h-full object-cover" data-alt="Sova hunter headshot, Russian male operative with blonde hair, cybernetic eye optic sensor, and tactical fur mantle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgW5a_-TEXlNFelMiq6tqaxe_iYLEl7sUGrKwokH3ZitzorUotGFOcripVgImkOb2KfiNmiu2uR-42FNZRAWeCmU5gk9aZX4v7163cArDMxbe3OITQrIfJEZQYLDanESlTXTWI2r2NECHFpQsd2g0hesu7DOti7cLZZ_Q4Q5fY3C6OjhH6kBvVmQttnfIG3ZYv1xq80k9SXTOuihOtg9OTyFdLuwH9gK3S1sakhBVWGp5w8rJv5AotdQ"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface truncate group-hover:text-secondary-container transition-colors">SOVA</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase">INITIATOR // RUS</div>
+</div>
+<span class="active-indicator hidden absolute right-0 top-0 bottom-0 w-1 bg-secondary-container"></span>
+</button>
+<!-- Agent Item: Killjoy -->
+<button class="agent-select-card p-3 bg-surface-container hover:bg-surface-container-high text-left flex items-center gap-3 transition-all relative overflow-hidden group" data-agent-id="killjoy" data-role="SENTINEL" type="button">
+<div class="w-12 h-12 bg-surface-container-lowest shrink-0 overflow-hidden">
+<img alt="Killjoy" class="w-full h-full object-cover" data-alt="Killjoy portrait, German tech genius female operative with green beanie, glasses, and yellow tech bomber jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnxD82sAR2c79U4nAUPg05ZuvystsI4enjWLZ4r4-n-aYU1K5ezh_-F8ILFdZpVyl4D3GQOYMs45iVgn4rp6H_swZM2TMNVNrJE1E-FgpTPgF4MwEB8ZWiOr_1m8ulpAIWwA7xz6lfHn2nl6wsQ77ZnJafAuJaNDM9IyU9U3VZu9t2OhUvI8FgMklQIMdR77lVIUmIVyRh70yXAWfimw0Ju3x8qZRA2UOnPFmT2bT0nZi618FvA5Vbgw"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface truncate group-hover:text-primary transition-colors">KILLJOY</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase">SENTINEL // DEU</div>
+</div>
+<span class="active-indicator hidden absolute right-0 top-0 bottom-0 w-1 bg-primary"></span>
+</button>
+<!-- Agent Item: Fade -->
+<button class="agent-select-card p-3 bg-surface-container hover:bg-surface-container-high text-left flex items-center gap-3 transition-all relative overflow-hidden group" data-agent-id="fade" data-role="INITIATOR" type="button">
+<div class="w-12 h-12 bg-surface-container-lowest shrink-0 overflow-hidden">
+<img alt="Fade" class="w-full h-full object-cover" data-alt="Fade agent tactical portrait, Turkish nightmare bounty hunter female with dark eye shadow, black henna hand patterns, and brooding aura" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC15n2ywMSk-D_2odfc0XwspR4a1YYJAaWIQ2-w0cGaFe_TDbphdmZITh5bSvsDcSAzam_g5i0zWUrjprf92orGIw0WTIexea4EyQdkziHlZYmSOfyi6boadLKIOW7qDnLEcP3Kv1GI-KUdN1yUqJuTwXzO5KEzuI_GGJg0AyWATMoqMC4YpbBtIDfYugbRzcCkjox8PN_LBEmHQJsDxuBu6xNDjRLd6Y-TvSzxwG0sBbvghbRATQ7zDQ"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface truncate group-hover:text-secondary-container transition-colors">FADE</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase">INITIATOR // TUR</div>
+</div>
+<span class="active-indicator hidden absolute right-0 top-0 bottom-0 w-1 bg-secondary-container"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. MAPS & WEAPONS EXPLORER                 -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile lg:px-margin py-20 bg-surface relative" id="arsenal-sector">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+<div>
+<div class="font-label-tactical text-label-tactical text-secondary-container mb-2 uppercase tracking-widest">// THE ARSENAL &amp; WARZONES</div>
+<h2 class="font-headline-xl text-headline-xl uppercase text-on-surface tracking-wider leading-none">FIELD DISPATCH</h2>
+</div>
+<!-- Mode Switcher Tabs -->
+<div class="flex bg-surface-container p-1 rounded-none">
+<button class="px-6 py-2.5 font-label-tactical text-label-tactical tracking-widest uppercase bg-primary-container text-on-primary font-bold transition-all" id="tab-toggle-maps" type="button">[ 01 // MAPS ]</button>
+<button class="px-6 py-2.5 font-label-tactical text-label-tactical tracking-widest uppercase text-on-surface-variant hover:text-on-surface transition-all" id="tab-toggle-weapons" type="button">[ 02 // WEAPONS ]</button>
+</div>
+</div>
+<!-- SUB-VIEW: MAPS EXPLORER -->
+<div class="w-full" id="maps-view-container">
+<!-- Map Selection Tabs -->
+<div class="flex flex-wrap gap-2 mb-6" id="map-selector-list">
+<button class="map-chip px-4 py-2 bg-primary-container text-on-primary font-label-tactical text-label-tactical uppercase tracking-wider font-bold" data-map="ascent" type="button">ASCENT</button>
+<button class="map-chip px-4 py-2 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-tactical text-label-tactical uppercase tracking-wider" data-map="bind" type="button">BIND</button>
+<button class="map-chip px-4 py-2 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-tactical text-label-tactical uppercase tracking-wider" data-map="haven" type="button">HAVEN</button>
+<button class="map-chip px-4 py-2 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-tactical text-label-tactical uppercase tracking-wider" data-map="split" type="button">SPLIT</button>
+<button class="map-chip px-4 py-2 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-tactical text-label-tactical uppercase tracking-wider" data-map="lotus" type="button">LOTUS</button>
+</div>
+<!-- Map Display Canvas Card -->
+<div class="relative w-full min-h-[480px] bg-surface-container-low p-6 lg:p-10 overflow-hidden flex flex-col justify-between [clip-path:polygon(0_0,calc(100%-32px)_0,100%_32px,100%_100%,0_100%)] shadow-2xl">
+<!-- Background Map Artwork -->
+<div class="absolute inset-0 bg-cover bg-center opacity-35 mix-blend-luminosity transition-all duration-500 scale-100 hover:scale-105" data-alt="Ascent map tactical environment layout, floating Venetian courtyard ruins over clear sky with mechanical closing blast doors and brick courtyards" id="map-bg-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFz4XiGcluyKa6jCx1Ufa86tyjVAzHrherCAjc7K6ONQHau71rDp5msrqdLTvWsj4KcOHeroP7WRWyFMtQ6v1WPi09NI3fLrOTWP8KQIG5lWKbF5fYX7LFwZ6NmLIbgNCPehiPa4iNXKMJvwPjhETLSqin7lG0usB5D0qA-EhOWtGNf_J9-A7lZD0Vy8BDba6H1gczn5uI0rkw-piSxQbsvbWk9vRK2suEuVssHGtAj3Ee8u0uPIOZGg')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<!-- Top Tactical Coordinates HUD -->
+<div class="relative z-10 flex items-center justify-between">
+<div>
+<span class="font-label-tactical text-label-tactical text-primary-container tracking-widest uppercase" id="map-location-tag">ITALY // VENICE SECTOR</span>
+<h3 class="font-headline-xl text-headline-xl uppercase text-on-surface tracking-wider leading-none" id="map-title">ASCENT</h3>
+</div>
+<div class="hidden sm:flex flex-col text-right">
+<span class="font-telemetry-micro text-telemetry-micro text-tertiary">SECTOR FOOTPRINT</span>
+<span class="font-label-tactical text-label-tactical text-secondary-container" id="map-sites-stat">2 BOMB SITES // MID COURTYARD</span>
+</div>
+</div>
+<!-- Tactical Chokepoints / Interactive Callouts -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 my-8 items-end">
+<div class="md:col-span-7 bg-surface-container-lowest/90 backdrop-blur-md p-6 max-w-xl">
+<div class="font-label-tactical text-label-tactical text-tertiary-fixed mb-2 uppercase">// STRATEGIC BLUEPRINT</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4" id="map-desc">
+              An open playground for small wars of position and attrition divides two sites on Ascent. Each site can be fortified by irreversible bomb doors that once down, must be destroyed or circumvented. Control the courtyard to isolate the defense.
+            </p>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 bg-surface-container">
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">DOOR LOCKS</div>
+<div class="font-label-tactical text-label-tactical text-on-surface font-bold" id="map-meta-1">YES (A / MID)</div>
+</div>
+<div class="p-2 bg-surface-container">
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">TELEPORTERS</div>
+<div class="font-label-tactical text-label-tactical text-on-surface font-bold" id="map-meta-2">NONE</div>
+</div>
+<div class="p-2 bg-surface-container">
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">SNIPER SIGHTLINES</div>
+<div class="font-label-tactical text-label-tactical text-primary-container font-bold" id="map-meta-3">MID COURTYARD</div>
+</div>
+</div>
+</div>
+<!-- Mini Schematic Pin Map -->
+<div class="md:col-span-5 flex flex-col items-start md:items-end">
+<div class="bg-surface-container-lowest/80 p-4 w-full max-w-xs">
+<div class="font-label-tactical text-label-tactical text-outline mb-3 uppercase flex items-center justify-between">
+<span>TACTICAL CALLOUTS</span>
+<span class="w-2 h-2 bg-secondary-container rounded-full animate-pulse"></span>
+</div>
+<div class="space-y-2" id="callout-pins-list">
+<div class="flex items-center justify-between p-2 bg-surface-container hover:bg-surface-variant cursor-pointer transition-colors">
+<span class="font-label-tactical text-label-tactical text-on-surface">A BOMB SITE</span>
+<span class="font-telemetry-micro text-telemetry-micro text-primary-container font-bold">HIGH ELEVATION</span>
+</div>
+<div class="flex items-center justify-between p-2 bg-surface-container hover:bg-surface-variant cursor-pointer transition-colors">
+<span class="font-label-tactical text-label-tactical text-on-surface">B BOMB SITE</span>
+<span class="font-telemetry-micro text-telemetry-micro text-secondary-container font-bold">CORRIDOR DEFENSE</span>
+</div>
+<div class="flex items-center justify-between p-2 bg-surface-container hover:bg-surface-variant cursor-pointer transition-colors">
+<span class="font-label-tactical text-label-tactical text-on-surface">MID PIZZA / COURTYARD</span>
+<span class="font-telemetry-micro text-telemetry-micro text-tertiary font-bold">CONTESTED ZONE</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-between pt-4">
+<span class="font-telemetry-micro text-telemetry-micro text-outline tracking-widest">TACTICAL SATELLITE FEED // PROTOCOL ASCENT V-8.0</span>
+<span class="font-label-tactical text-label-tactical text-secondary-container cursor-pointer hover:underline">[ VIEW DETAILED STRAT MAP &gt; ]</span>
+</div>
+</div>
+</div>
+<!-- SUB-VIEW: WEAPONS ARSENAL (Toggled via JS) -->
+<div class="w-full hidden" id="weapons-view-container">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Weapon List Selector (4 Columns) -->
+<div class="lg:col-span-4 space-y-2">
+<button class="weapon-select-card active w-full p-4 bg-surface-container hover:bg-surface-container-high text-left flex items-center justify-between transition-colors" data-weapon="vandal" type="button">
+<div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface">VANDAL</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">RIFLE // HIGH IMPACT SINGLE-SHOT</div>
+</div>
+<span class="font-label-tactical text-label-tactical text-primary-container">2,900 §</span>
+</button>
+<button class="weapon-select-card w-full p-4 bg-surface-container hover:bg-surface-container-high text-left flex items-center justify-between transition-colors" data-weapon="phantom" type="button">
+<div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface">PHANTOM</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">SILENCED RIFLE // HIGH FIRE RATE</div>
+</div>
+<span class="font-label-tactical text-label-tactical text-secondary-container">2,900 §</span>
+</button>
+<button class="weapon-select-card w-full p-4 bg-surface-container hover:bg-surface-container-high text-left flex items-center justify-between transition-colors" data-weapon="operator" type="button">
+<div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface">OPERATOR</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">SNIPER RIFLE // HIGH DAMAGE BOLT-ACTION</div>
+</div>
+<span class="font-label-tactical text-label-tactical text-primary-container">4,700 §</span>
+</button>
+<button class="weapon-select-card w-full p-4 bg-surface-container hover:bg-surface-container-high text-left flex items-center justify-between transition-colors" data-weapon="spectre" type="button">
+<div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface">SPECTRE</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">SMG // CLOSE RANGE SUPPRESSOR</div>
+</div>
+<span class="font-label-tactical text-label-tactical text-secondary-container">1,600 §</span>
+</button>
+<button class="weapon-select-card w-full p-4 bg-surface-container hover:bg-surface-container-high text-left flex items-center justify-between transition-colors" data-weapon="sheriff" type="button">
+<div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface">SHERIFF</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary">SIDEARM // HIGH CALIBER REVOLVER</div>
+</div>
+<span class="font-label-tactical text-label-tactical text-primary-container">800 §</span>
+</button>
+</div>
+<!-- Weapon Stats & Finishes Panel (8 Columns) -->
+<div class="lg:col-span-8 bg-surface-container p-6 lg:p-8 relative">
+<div class="flex items-center justify-between mb-6">
+<div>
+<span class="font-label-tactical text-label-tactical text-primary-container uppercase tracking-wider" id="weapon-type-badge">RIFLE CLASS</span>
+<h3 class="font-headline-xl text-headline-xl uppercase text-on-surface leading-tight" id="weapon-name">VANDAL</h3>
+</div>
+<!-- Finish Skin Selector -->
+<div class="flex items-center gap-2">
+<span class="font-telemetry-micro text-telemetry-micro text-outline mr-1">FINISH:</span>
+<button class="skin-btn px-2.5 py-1 text-label-tactical font-label-tactical bg-primary-container text-on-primary" data-skin="standard" type="button">BASE</button>
+<button class="skin-btn px-2.5 py-1 text-label-tactical font-label-tactical bg-surface-container-lowest text-on-surface hover:text-secondary-container" data-skin="prime" type="button">PRIME</button>
+<button class="skin-btn px-2.5 py-1 text-label-tactical font-label-tactical bg-surface-container-lowest text-on-surface hover:text-primary" data-skin="reaver" type="button">REAVER</button>
+</div>
+</div>
+<!-- Stylized Weapon Visual Area -->
+<div class="w-full h-52 bg-surface-container-lowest p-6 flex items-center justify-center relative overflow-hidden mb-8 transition-colors duration-300" id="weapon-display-box">
+<div class="absolute inset-0 bg-[radial-gradient(#2c3641_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
+<img alt="Weapon Artwork" class="max-h-full max-w-full object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)] transition-all duration-300" data-alt="High tech dark assault rifle weapon Vandal side view in studio tactical lighting with matte black finish and angular carbon alloy magazine" id="weapon-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiF1_Oc_4aZH-bctAm5Qd83HDpA9bZatKx4BUc6LWQ9VlM35alhe5qfL24m0iBVkCABaGow7h2Aug86frFU_9D4xiLNU3N4TFye-vgkfZ5B-zLmK5ZKP0WbeYDicCz_UGNGLJn8Y324IC9ERc1Ky4smrahgdSyiYUtrxUc02bCaHP8RwTLtRg97pGAMBHWUgXqBgeDk51pafu2LFOorWwHIlkFGeUutiUY6Om5zVPjCmWDatMX7doPQw"/>
+<span class="absolute bottom-2 right-3 font-telemetry-micro text-telemetry-micro text-tertiary uppercase" id="skin-label-overlay">MODEL: AR-76 BASE COMBAT SPEC</span>
+</div>
+<!-- Weapon Telemetry Stat Bars -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<div class="font-label-tactical text-label-tactical text-on-surface mb-3 uppercase tracking-wider">LETHALITY / DAMAGE INDEX</div>
+<div class="space-y-3 font-label-tactical text-label-tactical">
+<div>
+<div class="flex justify-between text-telemetry-micro text-tertiary mb-1">
+<span>HEADSHOT (0 - 50M)</span>
+<span class="text-primary-container font-bold" id="stat-dmg-head">160 HP (1 SHOT ELIM)</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest">
+<div class="h-full bg-primary-container transition-all duration-500" id="bar-dmg-head" style="width: 100%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-telemetry-micro text-tertiary mb-1">
+<span>BODY (0 - 50M)</span>
+<span class="text-on-surface" id="stat-dmg-body">40 HP</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest">
+<div class="h-full bg-secondary-container transition-all duration-500" id="bar-dmg-body" style="width: 65%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-telemetry-micro text-tertiary mb-1">
+<span>LEG (0 - 50M)</span>
+<span class="text-on-surface" id="stat-dmg-leg">34 HP</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest">
+<div class="h-full bg-tertiary transition-all duration-500" id="bar-dmg-leg" style="width: 50%"></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="font-label-tactical text-label-tactical text-on-surface mb-3 uppercase tracking-wider">BALLISTIC BEHAVIOR</div>
+<div class="space-y-3 font-label-tactical text-label-tactical">
+<div>
+<div class="flex justify-between text-telemetry-micro text-tertiary mb-1">
+<span>FIRE RATE</span>
+<span class="text-on-surface" id="stat-firerate">9.75 ROUNDS/SEC</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest">
+<div class="h-full bg-secondary-container transition-all duration-500" id="bar-firerate" style="width: 68%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-telemetry-micro text-tertiary mb-1">
+<span>MAGAZINE CAPACITY</span>
+<span class="text-on-surface" id="stat-mag">25 / 75 ROUNDS</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest">
+<div class="h-full bg-on-surface transition-all duration-500" id="bar-mag" style="width: 70%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-telemetry-micro text-tertiary mb-1">
+<span>WALL PENETRATION</span>
+<span class="text-primary-container font-bold" id="stat-pen">MEDIUM PENETRATION</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest">
+<div class="h-full bg-primary-container transition-all duration-500" id="bar-pen" style="width: 75%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. SYSTEM REQUIREMENTS & CLIENT DOWNLOAD   -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile lg:px-margin py-20 bg-surface-container-lowest relative" id="system-specs">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<div class="font-label-tactical text-label-tactical text-primary-container mb-2 uppercase tracking-widest">// TECHNICAL READINESS</div>
+<h2 class="font-headline-xl text-headline-xl uppercase text-on-surface tracking-wider leading-none">SYSTEM SPECS</h2>
+</div>
+<!-- Spec Tier Toggles -->
+<div class="flex flex-wrap gap-2" id="spec-tier-toggle-group">
+<button class="tier-btn px-4 py-2 font-label-tactical text-label-tactical uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-tier="min" type="button">MINIMUM (30 FPS)</button>
+<button class="tier-btn active px-4 py-2 font-label-tactical text-label-tactical uppercase tracking-wider bg-primary-container text-on-primary font-bold shadow-lg transition-all" data-tier="rec" type="button">RECOMMENDED (60 FPS)</button>
+<button class="tier-btn px-4 py-2 font-label-tactical text-label-tactical uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-tier="high" type="button">HIGH-END (144+ FPS)</button>
+</div>
+</div>
+<!-- Dynamic Specs & Deployment Tray Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Hardware Telemetry Table (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container p-6 lg:p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-4 mb-6">
+<span class="font-headline-sm text-headline-sm uppercase text-primary-container" id="tier-display-title">TARGET: 60 FPS SOLID REFRESH</span>
+<span class="font-telemetry-micro text-telemetry-micro text-outline">DIAGNOSTIC BENCHMARK // PASS</span>
+</div>
+<div class="space-y-4">
+<div class="p-4 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">memory</span>
+<span class="font-label-tactical text-label-tactical text-tertiary">CPU (PROCESSOR)</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold text-right" id="spec-cpu">Intel i3-4150 / AMD Ryzen 3 1200</span>
+</div>
+<div class="p-4 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">videogame_asset</span>
+<span class="font-label-tactical text-label-tactical text-tertiary">GPU (GRAPHICS)</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-secondary-container font-bold text-right" id="spec-gpu">GeForce GT 730 / Radeon R7 240</span>
+</div>
+<div class="p-4 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">dns</span>
+<span class="font-label-tactical text-label-tactical text-tertiary">RAM / MEMORY</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold text-right" id="spec-ram">4 GB SYSTEM RAM</span>
+</div>
+<div class="p-4 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">storage</span>
+<span class="font-label-tactical text-label-tactical text-tertiary">VRAM</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold text-right" id="spec-vram">1 GB VIDEO MEMORY</span>
+</div>
+<div class="p-4 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">terminal</span>
+<span class="font-label-tactical text-label-tactical text-tertiary">OPERATING SYSTEM</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold text-right">WINDOWS 10 / 11 64-BIT</span>
+</div>
+</div>
+</div>
+<div class="pt-6 flex items-center justify-between font-telemetry-micro text-telemetry-micro text-tertiary">
+<span>*TPM 2.0 &amp; SECURE BOOT REQUIRED ON WINDOWS 11</span>
+<span class="text-primary-container font-label-tactical text-label-tactical">DIRECTX: VERSION 11</span>
+</div>
+</div>
+<!-- Deployment & Download Client Box (5 Cols) -->
+<div class="lg:col-span-5 bg-gradient-to-br from-surface-container to-surface-container-high p-8 flex flex-col justify-between [clip-path:polygon(0_0,100%_0,100%_calc(100%-28px),calc(100%-28px)_100%,0_100%)] relative overflow-hidden" id="download-sector">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-fixed font-label-tactical text-label-tactical uppercase font-bold tracking-widest">DEPLOYMENT ACTIVE</span>
+<span class="font-telemetry-micro text-telemetry-micro text-tertiary">VERSION 8.04</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl uppercase text-on-surface tracking-wider leading-tight mb-4">
+            READY TO DEPLOY?
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            Join millions of agents worldwide. Download the lightweight Riot Client installer with built-in kernel-level Vanguard anti-cheat protection.
+          </p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-body-sm font-body-sm text-tertiary-fixed">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified_user</span>
+<span>Proprietary Vanguard Anti-Cheat Protocol</span>
+</div>
+<div class="flex items-center gap-3 text-body-sm font-body-sm text-tertiary-fixed">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">speed</span>
+<span>Global 128-Tick Competitive Servers</span>
+</div>
+<div class="flex items-center gap-3 text-body-sm font-body-sm text-tertiary-fixed">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">cloud_sync</span>
+<span>Free to Play &amp; Cross-Title Riot Rewards</span>
+</div>
+</div>
+</div>
+<div>
+<button class="w-full group relative flex items-center justify-center gap-3 py-4 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-on-surface hover:text-surface-container-lowest transition-all duration-200 [clip-path:polygon(10px_0,100%_0,calc(100%-10px)_100%,0_100%)] shadow-xl shadow-primary-container/20" id="download-btn-action" type="button">
+<span class="material-symbols-outlined text-[24px]">download</span>
+<span id="download-btn-text">DOWNLOAD RIOT CLIENT (66 MB)</span>
+</button>
+<div class="text-center font-telemetry-micro text-telemetry-micro text-tertiary mt-3">
+            WINDOWS 10/11 64-BIT COMPLIANT // FREE TO PLAY
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. LATEST NEWS & INTEL                     -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile lg:px-margin py-20 bg-surface relative" id="intel-feed">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<div class="font-label-tactical text-label-tactical text-secondary-container mb-2 uppercase tracking-widest">// GLOBAL INTEL FEED</div>
+<h2 class="font-headline-xl text-headline-xl uppercase text-on-surface tracking-wider leading-none">LATEST TRANSMISSIONS</h2>
+</div>
+<a class="inline-flex items-center gap-2 font-label-tactical text-label-tactical text-primary-container hover:text-on-surface transition-colors uppercase tracking-widest" href="#">
+<span>VIEW ALL TRANSMISSIONS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 3-Column Tactical News Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- News Article 1 -->
+<article class="group bg-surface-container hover:bg-surface-container-high transition-all duration-200 flex flex-col justify-between overflow-hidden relative">
+<div class="relative w-full h-56 overflow-hidden bg-surface-container-lowest">
+<img alt="Patch Notes Cover" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Tactical battlefield analysis screen displaying futuristic orange and cyan weapon calibration data and agent balance numbers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPq-U0zJj0tdPJmt6DoKgZx5jZuLVNn_7M_85ESdqzNI0GKuS2j6Vsio2B8EgMu4D0Qqyu0OvkCMTQ6Yto0x6lvIN6wQ7m1JSHoCRgX1a7s1v3eGhiOor9Dz3cW2Necy5ZLWekntdeT4Cf-AnURirSBVxR6wnCQcnCp2UhUJaM00F_x7rZ_lIbmWMjjIeloMXWgGo3QwglqwjiKMWAgHKyW3n5oHN828wtBzeCPJomYVHghZDNofGYAQ"/>
+<div class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-tactical text-label-tactical px-2 py-0.5 uppercase font-bold">PATCH NOTES</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/80 text-on-surface font-telemetry-micro text-telemetry-micro px-2 py-0.5">MAY 24, 2024</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors leading-snug mb-3">
+              PATCH NOTES 8.04: AGENT BALANCING &amp; DUELIST TUNING
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+              Dive into the adjustments for Duelist speed parameters, signature ability cooldowns, and critical performance enhancements across competitive queues.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4">
+<span class="font-telemetry-micro text-telemetry-micro text-outline uppercase tracking-wider">DEV TEAM INTEL</span>
+<span class="font-label-tactical text-label-tactical text-secondary-container group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">READ PROTOCOL →</span>
+</div>
+</div>
+</article>
+<!-- News Article 2 -->
+<article class="group bg-surface-container hover:bg-surface-container-high transition-all duration-200 flex flex-col justify-between overflow-hidden relative">
+<div class="relative w-full h-56 overflow-hidden bg-surface-container-lowest">
+<img alt="VCT Masters Cover" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Massive indoor esports tournament arena with thousands of cheering fans, gigantic high tech LED screens showing Valorant Champions Tour trophy and radiant laser lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE5aB1y-fDJyOgGwIo5nP2AtfpxRcdKLUf0RtrNMJiiRrqpFUOSa0z4y4proF2-YY_QetDj5GndgOEr36mOHK_jlno650o74ei1YBTondU9RvjHzUSjeJTZRwrkDd423FZbcB-RtDqg70xpQO-_e9cerJ-agR7omTei-5zbcUF989DwhjxJVykFpEnUD2MepmVnoaaXERwGpUduCXrgB4vrfE2KowPBvN1Jxn4bn3rHrjVlg5ax5IGVg"/>
+<div class="absolute top-3 left-3 bg-secondary-container text-on-secondary-fixed font-label-tactical text-label-tactical px-2 py-0.5 uppercase font-bold">ESPORTS</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/80 text-on-surface font-telemetry-micro text-telemetry-micro px-2 py-0.5">MAY 20, 2024</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-secondary-container transition-colors leading-snug mb-3">
+              VCT MASTERS MADRID: GRAND FINALS PREVIEW &amp; SCHEDULE
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+              The top eight international squads battle for radiant supremacy in Spain. Tune in live for match brackets, caster talents, and exclusive in-game drops.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4">
+<span class="font-telemetry-micro text-telemetry-micro text-outline uppercase tracking-wider">CHAMPIONS TOUR</span>
+<span class="font-label-tactical text-label-tactical text-secondary-container group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">VIEW BRACKETS →</span>
+</div>
+</div>
+</article>
+<!-- News Article 3 -->
+<article class="group bg-surface-container hover:bg-surface-container-high transition-all duration-200 flex flex-col justify-between overflow-hidden relative">
+<div class="relative w-full h-56 overflow-hidden bg-surface-container-lowest">
+<img alt="Community Spotlight Cover" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artistic digital concept illustration of diverse Valorant agents celebrating victory together with radiant geometric light effects and stylized spray paint typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAcZMRLOI-S3U3kbVZqYuiebyqaR2McZ2IVb1O8RrrVNeHjA_Nh2eS-cS7WTxVtTpxjx2Amqlc73dZRE-QUSCMvQjxp-OBxDJKoV5MJ3_-kM_9K0m399iQlloZ01yVDXzS0KOtAuQwg9fDW8iLxt7eI1eCJW-zN13wORyW7YKNcY8rK9xbUfaPk8o1zPse1JviVJGXKflbvydbxpk3Za4B1t-fgUm65fznaDBpcvBfo1fNH12lNapaFA"/>
+<div class="absolute top-3 left-3 bg-surface-variant text-on-surface font-label-tactical text-label-tactical px-2 py-0.5 uppercase font-bold">COMMUNITY</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/80 text-on-surface font-telemetry-micro text-telemetry-micro px-2 py-0.5">MAY 15, 2024</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors leading-snug mb-3">
+              COMMUNITY SPOTLIGHT: THE CLUTCH MOMENTS OF EPISODE 8
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+              From unreal 1v5 defuse saves to mind-bending cross-map line-ups, witness the finest tactical outplays created by the community this season.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4">
+<span class="font-telemetry-micro text-telemetry-micro text-outline uppercase tracking-wider">CREATOR FEED</span>
+<span class="font-label-tactical text-label-tactical text-secondary-container group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">WATCH HIGHLIGHTS →</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. COMPLIANCE, RATINGS & FOOTER EXTRA      -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile lg:px-margin py-12 bg-surface-container-low">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<!-- ESRB Rating Badge Module -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-lowest max-w-md w-full">
+<div class="w-14 h-16 bg-on-surface text-surface-container-lowest font-headline-xl font-bold flex items-center justify-center shrink-0">
+          T
+        </div>
+<div>
+<div class="font-label-tactical text-label-tactical text-on-surface font-bold">TEEN (ESRB)</div>
+<div class="font-telemetry-micro text-telemetry-micro text-tertiary uppercase leading-relaxed">
+            Blood, Language, Violence, Users Interact, In-Game Purchases
+          </div>
+</div>
+</div>
+<!-- Tactical Social Links & Signals -->
+<div class="flex flex-col items-center md:items-end gap-3">
+<div class="font-label-tactical text-label-tactical text-outline uppercase tracking-widest">CONNECT WITH VALORANT COMMAND</div>
+<div class="flex items-center gap-3">
+<a aria-label="Discord" class="w-10 h-10 bg-surface-container flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container-high transition-colors" href="#">
+<span class="font-label-tactical text-label-tactical font-bold">DC</span>
+</a>
+<a aria-label="X / Twitter" class="w-10 h-10 bg-surface-container flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container-high transition-colors" href="#">
+<span class="font-label-tactical text-label-tactical font-bold">X</span>
+</a>
+<a aria-label="YouTube" class="w-10 h-10 bg-surface-container flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container-high transition-colors" href="#">
+<span class="font-label-tactical text-label-tactical font-bold">YT</span>
+</a>
+<a aria-label="Twitch" class="w-10 h-10 bg-surface-container flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container-high transition-colors" href="#">
+<span class="font-label-tactical text-label-tactical font-bold">TW</span>
+</a>
+<a aria-label="Instagram" class="w-10 h-10 bg-surface-container flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container-high transition-colors" href="#">
+<span class="font-label-tactical text-label-tactical font-bold">IG</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Gameplay Trailer Interactive Modal Dialog -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md hidden items-center justify-center p-4" id="trailer-modal">
+<div class="relative w-full max-w-4xl bg-surface-container p-6 [clip-path:polygon(0_0,calc(100%-20px)_0,100%_20px,100%_100%,0_100%)] shadow-2xl">
+<div class="flex items-center justify-between pb-4 mb-4">
+<div class="font-label-tactical text-label-tactical text-primary-container tracking-wider uppercase">// TRANSMISSION FEED: GAMEPLAY CINEMATIC</div>
+<button class="text-on-surface-variant hover:text-on-surface font-label-tactical text-label-tactical uppercase" id="close-trailer-modal" type="button">[ CLOSE X ]</button>
+</div>
+<div class="relative w-full aspect-video bg-surface-container-lowest flex items-center justify-center">
+<div class="text-center p-6">
+<span class="material-symbols-outlined text-[64px] text-primary-container animate-pulse mb-4">smart_display</span>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">EPISODE 8: RECKONING // OFFICIAL GAMEPLAY TRAILER</div>
+<div class="font-label-tactical text-label-tactical text-tertiary">STREAMING 1080P 60FPS SECURE PROTOCOL</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+  (function() {
+    // 1. Tactical Crosshair Pointer Tracker
+    const crosshair = document.getElementById('tactical-crosshair');
+    if (crosshair) {
+      window.addEventListener('mousemove', (e) => {
+        crosshair.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      });
+    }
+
+    // 2. Agents Data Store & Spotlight Interaction
+    const agentData = {
+      jett: {
+        number: '#01',
+        name: 'JETT',
+        role: 'DUELIST',
+        origin: 'SOUTH KOREA',
+        bio: "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
+        style: 'AGGRESSIVE',
+        diff: 'HIGH',
+        imageAlt: 'High contrast stylized character portrait of tactical agent Jett with white tied-up wind-swept hair, glowing wind daggers, futuristic cyan ninja tactical suit against dark volumetric shadows',
+        abilities: [
+          { key: 'C', name: 'CLOUDBURST', type: 'VISION BLOCK', desc: 'Instantly throw a projectile that expands into a brief vision-blocking cloud on impact with a surface.' },
+          { key: 'Q', name: 'UPDRAFT', type: 'MOBILITY', desc: 'Instantly propel Jett high into the air to secure vertical vantage lines or surprise defenders.' },
+          { key: 'E', name: 'TAILWIND', type: 'SIGNATURE', desc: 'Activate to prepare a gust of wind. Re-use to instantly propel Jett in the direction she moves.' },
+          { key: 'X', name: 'BLADE STORM', type: 'ULTIMATE', desc: 'Equip a set of highly accurate throwing knives that recharge upon killing an opponent. Right click to throw all.' }
+        ]
+      },
+      phoenix: {
+        number: '#02',
+        name: 'PHOENIX',
+        role: 'DUELIST',
+        origin: 'UNITED KINGDOM',
+        bio: "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he rushes in to fight on his own terms.",
+        style: 'ENTRY FRAG',
+        diff: 'MEDIUM',
+        imageAlt: 'Phoenix avatar portrait, British operative with fire halo surrounding hands, high collar jacket with orange radiant interior lighting',
+        abilities: [
+          { key: 'C', name: 'BLAZE', type: 'FIRE WALL', desc: 'Cast a flame wall that blocks vision and damages anyone passing through it while healing Phoenix.' },
+          { key: 'Q', name: 'CURVEBALL', type: 'BLIND', desc: 'Equip a flare orb that takes a curving path and detonates shortly after throwing, blinding all who see it.' },
+          { key: 'E', name: 'HOT HANDS', type: 'SIGNATURE', desc: 'Throw a fireball that covers a zone in flames, damaging enemies and regenerating your health.' },
+          { key: 'X', name: 'RUN IT BACK', type: 'ULTIMATE', desc: "Mark your current location. If you die or the timer expires, you'll be reborn at that marked spot with full health." }
+        ]
+      },
+      viper: {
+        number: '#03',
+        name: 'VIPER',
+        role: 'CONTROLLER',
+        origin: 'UNITED STATES',
+        bio: "The American chemist, Viper deploys an array of poisonous chemical devices to control battlefield visibility and corrode enemy defenses. If the toxins don't kill her prey, her mind games surely will.",
+        style: 'ZONING / LINEUP',
+        diff: 'HARD',
+        imageAlt: 'Viper tactical character portrait with neon toxic green canisters, ominous gas mask, and cybernetic green emitter gauntlets',
+        abilities: [
+          { key: 'C', name: 'SNAKE BITE', type: 'VULNERABLE', desc: 'Launch a canister that shatters on a surface creating a chemical pool that damages and applies Vulnerable.' },
+          { key: 'Q', name: 'POISON CLOUD', type: 'SMOKE', desc: 'Throw a gas emitter that can be repeatedly activated and deactivated to create toxic smoke at the cost of fuel.' },
+          { key: 'E', name: 'TOXIC SCREEN', type: 'SIGNATURE', desc: 'Deploy a long line of gas emitters that can create a massive wall of toxic gas across multiple sites.' },
+          { key: 'X', name: "VIPER'S PIT", type: 'ULTIMATE', desc: 'Spray a massive chemical cloud that reduces the vision range and maximum health of enemies inside.' }
+        ]
+      },
+      omen: {
+        number: '#04',
+        name: 'OMEN',
+        role: 'CONTROLLER',
+        origin: 'UNKNOWN',
+        bio: 'A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.',
+        style: 'AMBUSH / SMOKE',
+        diff: 'MEDIUM',
+        imageAlt: 'Omen shadowy apparition operative in deep purple hooded mantle with ethereal smoke hands and piercing vertical slit eyes',
+        abilities: [
+          { key: 'C', name: 'SHROUDED STEP', type: 'TELEPORT', desc: 'Channel for a brief duration then shadow walk to a targeted location up to medium distance.' },
+          { key: 'Q', name: 'PARANOIA', type: 'NEARSIGHT', desc: 'Send out a shadow projectile forward, briefly nearsighting and deafening all players it touches.' },
+          { key: 'E', name: 'DARK COVER', type: 'SIGNATURE', desc: 'Cast a long-range shadow orb that bursts into a hollow sphere of darkness blocking vision.' },
+          { key: 'X', name: 'FROM THE SHADOWS', type: 'ULTIMATE', desc: 'Select any location on the map to teleport there as a shade. Destroying the shade cancels the teleport.' }
+        ]
+      },
+      reyna: {
+        number: '#05',
+        name: 'REYNA',
+        role: 'DUELIST',
+        origin: 'MEXICO',
+        bio: 'Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her sharply reliant on pure performance.',
+        style: 'SNOWBALL',
+        diff: 'HIGH',
+        imageAlt: 'Reyna character face portrait with purple glowing eyes, dark sleek armor and purple soul energy tendrils hovering on fingertips',
+        abilities: [
+          { key: 'C', name: 'LEER', type: 'NEARSIGHT EYE', desc: 'Cast an ethereal eye forward that nearsights all enemies looking at it until destroyed.' },
+          { key: 'Q', name: 'DEVOUR', type: 'HEAL', desc: 'Consume the soul orb of a recently slain enemy to rapidly heal back up to maximum health and overheal.' },
+          { key: 'E', name: 'DISMISS', type: 'SIGNATURE', desc: 'Instantly consume a nearby soul orb to become completely invulnerable and intangibly swift.' },
+          { key: 'X', name: 'EMPRESS', type: 'ULTIMATE', desc: 'Enter a battle frenzy, increasing firing and reload speed, granting infinite ability soul harvest charges.' }
+        ]
+      },
+      sova: {
+        number: '#06',
+        name: 'SOVA',
+        role: 'INITIATOR',
+        origin: 'RUSSIA',
+        bio: "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and scouting tech ensure no one hides for long.",
+        style: 'RECON / INTEL',
+        diff: 'HIGH',
+        imageAlt: 'Sova Russian hunter with glowing shock arrow notched on tactical compound bow, futuristic ocular device in cold blue tundra light',
+        abilities: [
+          { key: 'C', name: 'OWL DRONE', type: 'SCOUT', desc: 'Deploy and pilot a steerable drone that can fire a dart to reveal target positions.' },
+          { key: 'Q', name: 'SHOCK BOLT', type: 'AOE DAMAGE', desc: 'Fire an explosive arrow that releases a damaging burst of static electricity on collision.' },
+          { key: 'E', name: 'RECON BOLT', type: 'SIGNATURE', desc: 'Fire a sonar dart that deploys on collision, pinging the location of nearby visible enemies.' },
+          { key: 'X', name: "HUNTER'S FURY", type: 'ULTIMATE', desc: 'Fire up to three long-range wall-piercing energy blasts across the entire map, tagging and damaging enemies.' }
+        ]
+      },
+      killjoy: {
+        number: '#07',
+        name: 'KILLJOY',
+        role: 'SENTINEL',
+        origin: 'GERMANY',
+        bio: "The genius of Germany, Killjoy effortlessly secures key battlefield positions with her arsenal of inventions. If their damage doesn't stop her enemies, her robots' debuffs will make short work of them.",
+        style: 'AREA LOCKDOWN',
+        diff: 'MEDIUM',
+        imageAlt: 'Killjoy German engineer with yellow utility parka, round glasses, and an automated turret robot ready to deploy beside her',
+        abilities: [
+          { key: 'C', name: 'NANOSWARM', type: 'DAMAGE TRAP', desc: 'Throw a covert grenade that turns into a lethal swarm of damaging nanobots upon manual detonation.' },
+          { key: 'Q', name: 'ALARM BOT', type: 'VULNERABLE TRAP', desc: 'Deploy a covert bot that hunts down enemies entering range and explodes, applying Vulnerable.' },
+          { key: 'E', name: 'TURRET', type: 'SIGNATURE', desc: 'Deploy an automated sentry turret that fires in 3-round bursts at enemies within a 180-degree cone.' },
+          { key: 'X', name: 'LOCKDOWN', type: 'ULTIMATE', desc: 'Deploy a lockdown device that after a windup detains all enemies caught in its massive radius.' }
+        ]
+      },
+      fade: {
+        number: '#08',
+        name: 'FADE',
+        role: 'INITIATOR',
+        origin: 'TURKEY',
+        bio: 'Turkish bounty hunter Fade unleashes the power of raw nightmares to seize the secrets of enemies. Attuned with terror itself, she tracks targets before crushing them in darkness.',
+        style: 'SEIZE / REVEAL',
+        diff: 'HIGH',
+        imageAlt: 'Fade operative brooding in shadows with black nightmare creature silhouette behind her, glowing turquoise eye tattoos',
+        abilities: [
+          { key: 'C', name: 'PROWLER', type: 'CHASE / BLIND', desc: 'Send out a creature that travels forward or steers to lock onto trails, nearsighting targets upon reach.' },
+          { key: 'Q', name: 'SEIZE', type: 'TETHER', desc: 'Equip an orb of nightmare ink that tethers enemies in place and inflicts deafening decay.' },
+          { key: 'E', name: 'HAUNT', type: 'SIGNATURE', desc: 'Throw a nightmare watcher that drops to reveal enemies in line of sight and creates terror trails.' },
+          { key: 'X', name: 'NIGHTFALL', type: 'ULTIMATE', desc: 'Send a wave of nightmare energy through walls, deafening, decaying, and trailing all hit opponents.' }
+        ]
+      }
+    };
+
+    // Agent Spotlight Rendering
+    function selectAgent(id) {
+      const data = agentData[id];
+      if (!data) return;
+
+      document.getElementById('spotlight-number').textContent = data.number;
+      document.getElementById('spotlight-name').textContent = data.name;
+      document.getElementById('spotlight-role-badge').textContent = data.role;
+      document.getElementById('spotlight-origin').textContent = data.origin;
+      document.getElementById('spotlight-bio').textContent = data.bio;
+      document.getElementById('spotlight-stat-style').textContent = data.style;
+      document.getElementById('spotlight-stat-diff').textContent = data.diff;
+
+      const img = document.getElementById('spotlight-image');
+      img.setAttribute('data-alt', data.imageAlt);
+
+      // Render 4 Abilities
+      const abilitiesBox = document.getElementById('spotlight-abilities');
+      abilitiesBox.innerHTML = '';
+      data.abilities.forEach(ab => {
+        const isUlt = ab.key === 'X';
+        const isSig = ab.key === 'E';
+        const keyColor = isUlt ? 'bg-primary text-on-primary-fixed' : (isSig ? 'bg-primary-container text-on-primary' : 'bg-surface-variant text-on-surface');
+        const iconName = isUlt ? 'swords' : (isSig ? 'bolt' : 'star');
+
+        const card = document.createElement('div');
+        card.className = 'ability-card group relative p-3 bg-surface-container-lowest hover:bg-surface-container-high transition-colors cursor-pointer';
+        card.innerHTML = `
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-label-tactical text-label-tactical px-1.5 py-0.5 ${keyColor}">${ab.key}</span>
+            <span class="material-symbols-outlined text-[18px] text-secondary-container">${iconName}</span>
+          </div>
+          <div class="font-label-tactical text-label-tactical font-bold text-on-surface truncate">${ab.name}</div>
+          <div class="font-telemetry-micro text-telemetry-micro text-tertiary truncate">${ab.type}</div>
+          <div class="absolute bottom-full left-0 mb-2 w-48 p-3 bg-surface-container-highest text-on-surface text-body-sm font-body-sm shadow-xl hidden group-hover:block z-30 pointer-events-none">
+            ${ab.desc}
+          </div>
+        `;
+        abilitiesBox.appendChild(card);
+      });
+
+      // Update Card Active State
+      document.querySelectorAll('.agent-select-card').forEach(btn => {
+        const indicator = btn.querySelector('.active-indicator');
+        if (btn.getAttribute('data-agent-id') === id) {
+          btn.classList.add('bg-surface-container-high');
+          if (indicator) indicator.classList.remove('hidden');
+        } else {
+          btn.classList.remove('bg-surface-container-high');
+          if (indicator) indicator.classList.add('hidden');
+        }
+      });
+    }
+
+    // Role Filter Buttons
+    const roleBtns = document.querySelectorAll('.role-filter-btn');
+    roleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        roleBtns.forEach(b => {
+          b.className = 'role-filter-btn px-4 py-2 font-label-tactical text-label-tactical tracking-widest uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors';
+        });
+        btn.className = 'role-filter-btn px-4 py-2 font-label-tactical text-label-tactical tracking-widest uppercase bg-primary-container text-on-primary font-bold shadow-md transition-colors';
+
+        const role = btn.getAttribute('data-role');
+        const agentCards = document.querySelectorAll('.agent-select-card');
+        agentCards.forEach(card => {
+          if (role === 'ALL' || card.getAttribute('data-role') === role) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Agent Selection Clicks
+    document.querySelectorAll('.agent-select-card').forEach(card => {
+      card.addEventListener('click', () => {
+        selectAgent(card.getAttribute('data-agent-id'));
+      });
+    });
+
+    // 3. Maps & Weapons Explorer Tab Toggling
+    const tabMaps = document.getElementById('tab-toggle-maps');
+    const tabWeapons = document.getElementById('tab-toggle-weapons');
+    const mapsContainer = document.getElementById('maps-view-container');
+    const weaponsContainer = document.getElementById('weapons-view-container');
+
+    if (tabMaps && tabWeapons) {
+      tabMaps.addEventListener('click', () => {
+        tabMaps.className = 'px-6 py-2.5 font-label-tactical text-label-tactical tracking-widest uppercase bg-primary-container text-on-primary font-bold transition-all';
+        tabWeapons.className = 'px-6 py-2.5 font-label-tactical text-label-tactical tracking-widest uppercase text-on-surface-variant hover:text-on-surface transition-all';
+        mapsContainer.classList.remove('hidden');
+        weaponsContainer.classList.add('hidden');
+      });
+
+      tabWeapons.addEventListener('click', () => {
+        tabWeapons.className = 'px-6 py-2.5 font-label-tactical text-label-tactical tracking-widest uppercase bg-primary-container text-on-primary font-bold transition-all';
+        tabMaps.className = 'px-6 py-2.5 font-label-tactical text-label-tactical tracking-widest uppercase text-on-surface-variant hover:text-on-surface transition-all';
+        weaponsContainer.classList.remove('hidden');
+        mapsContainer.classList.add('hidden');
+      });
+    }
+
+    // Maps Switching Logic
+    const mapData = {
+      ascent: {
+        title: 'ASCENT',
+        location: 'ITALY // VENICE SECTOR',
+        sites: '2 BOMB SITES // MID COURTYARD',
+        desc: 'An open playground for small wars of position and attrition divides two sites on Ascent. Each site can be fortified by irreversible bomb doors that once down, must be destroyed or circumvented. Control the courtyard to isolate the defense.',
+        meta1: 'YES (A / MID)',
+        meta2: 'NONE',
+        meta3: 'MID COURTYARD',
+        alt: 'Ascent map tactical environment layout, floating Venetian courtyard ruins over clear sky with mechanical closing blast doors and brick courtyards'
+      },
+      bind: {
+        title: 'BIND',
+        location: 'MOROCCO // RABAT SECTOR',
+        sites: '2 BOMB SITES // ONE-WAY TELEPORTERS',
+        desc: 'Two sites with no middle ground. You have to pick left or right. What’s the catch? Both offer direct paths for attackers and a pair of one-way teleporters that make flanking or rotating instant and lethal.',
+        meta1: 'NONE',
+        meta2: '2 ONE-WAY PORTALS',
+        meta3: 'HOOKAH / LONG B',
+        alt: 'Bind map desert tactical installation with sand swept stone alleyways and loud industrial teleporter gates glowing neon cyan'
+      },
+      haven: {
+        title: 'HAVEN',
+        location: 'BHUTAN // THIMPHU SECTOR',
+        sites: '3 BOMB SITES // EXTENDED LAYOUT',
+        desc: 'Beneath a forgotten monastery, a emergent conflict erupts over three sites. The additional territory provides attackers more room to maneuver, but defenders with disciplined utility can choke points off methodically.',
+        meta1: 'NO',
+        meta2: 'NONE',
+        meta3: 'GARAGE / A LONG',
+        alt: 'Haven traditional pagoda temple architecture mixed with high tech radianite laboratory equipment and multi-tiered central courtyard'
+      },
+      split: {
+        title: 'SPLIT',
+        location: 'JAPAN // TOKYO SECTOR',
+        sites: '2 BOMB SITES // VERTICAL ZIPLINES',
+        desc: 'If you want to go far, you have to go up. A pair of sites split by an elevated center ground allows rapid movement using two ascending vertical rope ascenders. Quick rotations and overhead verticality decide victories here.',
+        meta1: 'NONE',
+        meta2: 'NONE',
+        meta3: 'MID VENT / B RAFTER',
+        alt: 'Split futuristic Tokyo train station cityscape with neon holographic signs, soaring skyscrapers and vertical utility ziplines'
+      },
+      lotus: {
+        title: 'LOTUS',
+        location: 'INDIA // WESTERN GHATS',
+        sites: '3 BOMB SITES // ROTATING STONE DOORS',
+        desc: 'A mysterious structure housing an astral conduit radiates with ancient power. Three full sites flanked by mechanical rotating stone doors and a destructible door allow for unprecedented dynamic combat shifts.',
+        meta1: 'BREAKABLE WALL',
+        meta2: 'ROTATING DOORS',
+        meta3: 'C MOUND / A ROOT',
+        alt: 'Lotus ancient Indian stone carved ruins overtaken by radiant lotus blooms with giant rotating stone mechanical circular gateways'
+      }
+    };
+
+    document.querySelectorAll('.map-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.map-chip').forEach(b => {
+          b.className = 'map-chip px-4 py-2 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-tactical text-label-tactical uppercase tracking-wider';
+        });
+        btn.className = 'map-chip px-4 py-2 bg-primary-container text-on-primary font-label-tactical text-label-tactical uppercase tracking-wider font-bold';
+
+        const m = mapData[btn.getAttribute('data-map')];
+        if (m) {
+          document.getElementById('map-title').textContent = m.title;
+          document.getElementById('map-location-tag').textContent = m.location;
+          document.getElementById('map-sites-stat').textContent = m.sites;
+          document.getElementById('map-desc').textContent = m.desc;
+          document.getElementById('map-meta-1').textContent = m.meta1;
+          document.getElementById('map-meta-2').textContent = m.meta2;
+          document.getElementById('map-meta-3').textContent = m.meta3;
+          document.getElementById('map-bg-image').setAttribute('data-alt', m.alt);
+        }
+      });
+    });
+
+    // Weapons Switching Logic
+    const weaponData = {
+      vandal: {
+        name: 'VANDAL',
+        type: 'RIFLE CLASS',
+        head: '160 HP (1 SHOT ELIM)',
+        body: '40 HP',
+        leg: '34 HP',
+        headWidth: '100%',
+        bodyWidth: '65%',
+        legWidth: '50%',
+        fireRate: '9.75 ROUNDS/SEC',
+        fireRateWidth: '68%',
+        mag: '25 / 75 ROUNDS',
+        magWidth: '70%',
+        pen: 'MEDIUM PENETRATION',
+        penWidth: '75%',
+        alt: 'High tech dark assault rifle weapon Vandal side view in studio tactical lighting with matte black finish and angular carbon alloy magazine'
+      },
+      phantom: {
+        name: 'PHANTOM',
+        type: 'SILENCED RIFLE CLASS',
+        head: '156 HP (CLOSE) / 140 HP (MED)',
+        body: '39 HP',
+        leg: '33 HP',
+        headWidth: '95%',
+        bodyWidth: '63%',
+        legWidth: '48%',
+        fireRate: '11.0 ROUNDS/SEC',
+        fireRateWidth: '82%',
+        mag: '30 / 90 ROUNDS',
+        magWidth: '85%',
+        pen: 'MEDIUM PENETRATION',
+        penWidth: '75%',
+        alt: 'Sleek matte silenced combat carbine Phantom with integral suppressor and glowing telemetry LED round counter on top rail'
+      },
+      operator: {
+        name: 'OPERATOR',
+        type: 'HEAVY SNIPER CLASS',
+        head: '255 HP (LETHAL)',
+        body: '150 HP (LETHAL)',
+        leg: '120 HP',
+        headWidth: '100%',
+        bodyWidth: '100%',
+        legWidth: '80%',
+        fireRate: '0.6 ROUNDS/SEC',
+        fireRateWidth: '20%',
+        mag: '5 / 10 ROUNDS',
+        magWidth: '25%',
+        pen: 'HIGH PENETRATION',
+        penWidth: '100%',
+        alt: 'Massive high caliber bolt action heavy sniper rifle Operator with illuminated tactical dual-zoom scope and heavy bipod'
+      },
+      spectre: {
+        name: 'SPECTRE',
+        type: 'SMG SUPPRESSED CLASS',
+        head: '78 HP',
+        body: '26 HP',
+        leg: '22 HP',
+        headWidth: '60%',
+        bodyWidth: '45%',
+        legWidth: '35%',
+        fireRate: '13.33 ROUNDS/SEC',
+        fireRateWidth: '95%',
+        mag: '30 / 90 ROUNDS',
+        magWidth: '85%',
+        pen: 'LOW PENETRATION',
+        penWidth: '45%',
+        alt: 'Compact tactical submachine gun Spectre with barrel suppressor, curved magazine, and high-traction military grips'
+      },
+      sheriff: {
+        name: 'SHERIFF',
+        type: 'SIDEARM MAGNUM CLASS',
+        head: '159 HP (0-30M ONE-TAP)',
+        body: '55 HP',
+        leg: '46 HP',
+        headWidth: '98%',
+        bodyWidth: '65%',
+        legWidth: '52%',
+        fireRate: '4.0 ROUNDS/SEC',
+        fireRateWidth: '40%',
+        mag: '6 / 24 ROUNDS',
+        magWidth: '30%',
+        pen: 'HIGH PENETRATION',
+        penWidth: '95%',
+        alt: 'Heavy cylinder magnum tactical revolver Sheriff with vented barrel rib and ergonomic composite pistol grip'
+      }
+    };
+
+    document.querySelectorAll('.weapon-select-card').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.weapon-select-card').forEach(b => b.classList.remove('bg-surface-container-high'));
+        btn.classList.add('bg-surface-container-high');
+
+        const w = weaponData[btn.getAttribute('data-weapon')];
+        if (w) {
+          document.getElementById('weapon-name').textContent = w.name;
+          document.getElementById('weapon-type-badge').textContent = w.type;
+          document.getElementById('stat-dmg-head').textContent = w.head;
+          document.getElementById('stat-dmg-body').textContent = w.body;
+          document.getElementById('stat-dmg-leg').textContent = w.leg;
+          document.getElementById('bar-dmg-head').style.width = w.headWidth;
+          document.getElementById('bar-dmg-body').style.width = w.bodyWidth;
+          document.getElementById('bar-dmg-leg').style.width = w.legWidth;
+
+          document.getElementById('stat-firerate').textContent = w.fireRate;
+          document.getElementById('bar-firerate').style.width = w.fireRateWidth;
+          document.getElementById('stat-mag').textContent = w.mag;
+          document.getElementById('bar-mag').style.width = w.magWidth;
+          document.getElementById('stat-pen').textContent = w.pen;
+          document.getElementById('bar-pen').style.width = w.penWidth;
+
+          document.getElementById('weapon-image').setAttribute('data-alt', w.alt);
+        }
+      });
+    });
+
+    // Finish Skin Switcher Simulation
+    const skinBtns = document.querySelectorAll('.skin-btn');
+    const displayBox = document.getElementById('weapon-display-box');
+    const skinLabel = document.getElementById('skin-label-overlay');
+    skinBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        skinBtns.forEach(b => {
+          b.className = 'skin-btn px-2.5 py-1 text-label-tactical font-label-tactical bg-surface-container-lowest text-on-surface';
+        });
+        btn.className = 'skin-btn px-2.5 py-1 text-label-tactical font-label-tactical bg-primary-container text-on-primary';
+
+        const skin = btn.getAttribute('data-skin');
+        if (skin === 'prime') {
+          displayBox.style.backgroundColor = '#172220';
+          skinLabel.textContent = 'FINISH: PRIME GOLD & HIGH-TECH LUXURY';
+        } else if (skin === 'reaver') {
+          displayBox.style.backgroundColor = '#1d1223';
+          skinLabel.textContent = 'FINISH: REAVER DARK SOUL GOTHIC ALLOY';
+        } else {
+          displayBox.style.backgroundColor = '';
+          skinLabel.textContent = 'MODEL: AR-76 BASE COMBAT SPEC';
+        }
+      });
+    });
+
+    // 4. System Specs Tiers Toggle
+    const specTiers = {
+      min: {
+        title: 'TARGET: 30 FPS BASELINE PLAYABLE',
+        cpu: 'Intel Core 2 Duo E8400 / AMD Athlon 200GE',
+        gpu: 'Intel HD 4000 / Radeon R5 200',
+        ram: '4 GB SYSTEM RAM',
+        vram: '512 MB VIDEO MEMORY'
+      },
+      rec: {
+        title: 'TARGET: 60 FPS SOLID REFRESH',
+        cpu: 'Intel i3-4150 / AMD Ryzen 3 1200',
+        gpu: 'GeForce GT 730 / Radeon R7 240',
+        ram: '4 GB SYSTEM RAM',
+        vram: '1 GB VIDEO MEMORY'
+      },
+      high: {
+        title: 'TARGET: 144+ FPS ESPORTS COMPETITIVE TIER',
+        cpu: 'Intel i5-9400F 2.90GHz / AMD Ryzen 5 2600X',
+        gpu: 'GeForce GTX 1050 Ti / Radeon R9 380',
+        ram: '8 GB OR HIGHER',
+        vram: '4 GB VIDEO MEMORY'
+      }
+    };
+
+    const tierBtns = document.querySelectorAll('.tier-btn');
+    tierBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tierBtns.forEach(b => {
+          b.className = 'tier-btn px-4 py-2 font-label-tactical text-label-tactical uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface transition-all';
+        });
+        btn.className = 'tier-btn active px-4 py-2 font-label-tactical text-label-tactical uppercase tracking-wider bg-primary-container text-on-primary font-bold shadow-lg transition-all';
+
+        const t = specTiers[btn.getAttribute('data-tier')];
+        if (t) {
+          document.getElementById('tier-display-title').textContent = t.title;
+          document.getElementById('spec-cpu').textContent = t.cpu;
+          document.getElementById('spec-gpu').textContent = t.gpu;
+          document.getElementById('spec-ram').textContent = t.ram;
+          document.getElementById('spec-vram').textContent = t.vram;
+        }
+      });
+    });
+
+    // 5. Download Button Simulated Trigger
+    const downloadBtn = document.getElementById('download-btn-action');
+    const downloadTxt = document.getElementById('download-btn-text');
+    if (downloadBtn && downloadTxt) {
+      downloadBtn.addEventListener('click', () => {
+        downloadTxt.textContent = 'CONNECTING TO RIOT CDN...';
+        setTimeout(() => {
+          downloadTxt.textContent = 'INSTALLER DOWNLOADING (VALORANT.EXE)';
+        }, 800);
+      });
+    }
+
+    // 6. Gameplay Trailer Modal Dialog
+    const triggerModal = document.getElementById('trigger-trailer-modal');
+    const closeModal = document.getElementById('close-trailer-modal');
+    const trailerModal = document.getElementById('trailer-modal');
+
+    if (triggerModal && closeModal && trailerModal) {
+      triggerModal.addEventListener('click', () => {
+        trailerModal.classList.remove('hidden');
+        trailerModal.classList.add('flex');
+      });
+      closeModal.addEventListener('click', () => {
+        trailerModal.classList.add('hidden');
+        trailerModal.classList.remove('flex');
+      });
+      trailerModal.addEventListener('click', (e) => {
+        if (e.target === trailerModal) {
+          trailerModal.classList.add('hidden');
+          trailerModal.classList.remove('flex');
+        }
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant py-space-xl"><div class="w-full px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start space-y-space-xs"><div class="flex items-center space-x-space-sm"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider">RIOT GAMES</span><span class="text-outline font-label-tactical text-label-tactical">|</span><span class="font-label-tactical text-label-tactical text-secondary-container tracking-widest">PROTOCOL IN EFFECT</span></div><p class="font-telemetry-micro text-telemetry-micro text-tertiary-container">© 2024 RIOT GAMES, INC. VALORANT AND ANY ASSOCIATED LOGOS ARE TRADEMARKS OR REGISTERED TRADEMARKS.</p></div><div class="flex items-center space-x-space-md"><span class="font-label-tactical text-label-tactical text-outline hover:text-on-surface cursor-pointer transition-colors">PRIVACY PROTOCOL</span><span class="font-label-tactical text-label-tactical text-outline hover:text-on-surface cursor-pointer transition-colors">TERMS OF COMBAT</span><span class="font-label-tactical text-label-tactical text-outline hover:text-on-surface cursor-pointer transition-colors">SUPPORT FEED</span></div></div></footer></body></html>
